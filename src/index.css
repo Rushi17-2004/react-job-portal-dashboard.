@@ -1,0 +1,136 @@
+@import "tailwindcss";
+
+
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html,body{
+  height: 100%;
+  width: 100%;
+  color: #101010;
+}
+
+
+.parent{
+  min-height: 100vh;
+  width: 100%;
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.card{
+  height: 300px;
+  width: 270px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+}
+
+.box1{
+  display: flex;
+  justify-content: space-between;
+}
+
+.box1 img{
+  height: 40px;
+  width: 40px;
+  border-radius: 25px;
+  border: 1px solid rgba(56, 56, 56, 0.736);
+  padding: 5px;
+}
+
+.box1 button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;                  /* Clean horizontal space between text and icon */
+  
+  /* 🌟 Perfect padding for this exact pill shape */
+  padding: 4px 10px;         
+  line-height: 1;            
+
+  /* 🎨 Colors and Typography */
+  background-color: #fcfcfc; /* Off-white background */
+  border: 1px solid #e2e2e2; /* Very light gray border line */
+  color: #555555;           /* Soft dark-gray text color */
+  font-size: 13px;           /* Clean, small text size */
+  font-weight: 500;          /* Clean medium weight (not too bold) */
+  
+  /* 💊 Fully rounded corners for the pill look */
+  border-radius: 6px;        
+  cursor: pointer;
+  transition: all 0.2s ease;
+}  
+
+.center{
+  padding: 15px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.btn{
+  display: flex;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.btn button{
+  padding: 4px 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: #d5d5d5;
+  font-weight: 400;
+}
+
+.center h5{
+  font-size: 17px;
+   color: #4b4b4b;
+}
+
+.center span{
+  font-size: 10px;
+  color: #ababab;
+}
+
+.center h3{
+  font-size: 17px;
+  color: #4b4b4b;
+}
+
+.bottom{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  border-top: 1px solid #75737354;
+  padding-top: 20px;
+}
+
+.price h3{
+  color: #4b4b4b;
+  font-size: 15px;
+}
+
+.price p {
+  color: #4b4b4b;
+  font-size: 10px;
+}
+
+.bottom button{
+  color: #4b4b4b;
+  padding: 0 15px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: #282727;
+  color: #fff;
+  font-weight: 500;
+}
